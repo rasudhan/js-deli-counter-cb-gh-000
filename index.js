@@ -19,4 +19,7 @@ function currentLine(line) {
       out+=`${i+1}. ${line[i]},`
     }
   }
+  else {
+    return "The line is currently empty."
+  }
 }
