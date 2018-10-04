@@ -11,3 +11,12 @@ function nowServing(currentLine) {
     return "There is nobody waiting to be served!"
   }
 }
+
+function currentLine(line) {
+  if (line.length>0) {
+    var out="The line is currently: "
+    for (let i=0;i<line.length;i++) {
+      out+=`${i+1}. ${line[i]},`
+    }
+  }
+}
